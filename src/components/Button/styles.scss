@@ -1,0 +1,27 @@
+@use 'src/styles/vars';
+
+.button {
+  width: 30%;
+  border: none;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-family: 'Space Mono', monospace;
+  &-standard {
+    background-color: vars.$darkGreenColor;
+    color: white;
+    &__active {
+      background-color: vars.$lighterGreenColor;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .button {
+  width: 48%;
+  font-size: 1rem;
+}
+}
+
+

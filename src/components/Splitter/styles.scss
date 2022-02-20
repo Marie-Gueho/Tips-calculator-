@@ -1,0 +1,38 @@
+@use 'src/styles/vars';
+
+.main {
+  background-color: vars.$backgroundColor;
+  width: 60%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &-title {
+    letter-spacing: 5px;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+    color: vars.$darkGreenColor;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .main {
+    width: 100%;
+    height: 100%;
+    &-title {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .main-title {
+      margin-bottom: 0.2rem;
+    }
+}
+
+
+
+
